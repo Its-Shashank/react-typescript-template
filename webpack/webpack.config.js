@@ -18,6 +18,18 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"], // including css files in react
+      },
+      {
+        test: /\.(?:ico|gif|png|jpeg|jpg)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, // for fonts and svgs
+        type: "asset/inline",
+      },
     ],
   },
   output: {
