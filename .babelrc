@@ -8,5 +8,13 @@
       }
     ],
     "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime", // this package lets us use async await feature in react app
+      {
+        "regenerator": true
+      }
+    ]
   ]
 }
